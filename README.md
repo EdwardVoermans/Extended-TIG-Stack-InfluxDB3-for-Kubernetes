@@ -3,6 +3,7 @@
 A complete Telegraf-InfluxDB3-Grafana (TIG) monitoring stack deployment for Kubernetes (K3S), featuring automated initialization, HTTPS ingress, and persistent storage for comprehensive system monitoring and visualization.
 The key of this project is the **automated deployment**. It will setup a kubernetes development environment in minutes instead of hours if not days.
 
+If you are looking for the **Docker version** check this: https://tinyurl.com/5n8ydsr4
 
 ## Overview
 
