@@ -75,8 +75,8 @@ This deployment requires a K3s cluster with the following components **already i
 
 ### Note on step 4.
 The final step in the deployment consists of creating a Grafana Service Account Token.
-This is done through the Grafan API and thus requires name resolving for your Grafana container https://tig-grafana.YourDomainOfChoice
-So this will require you to conduct the following steps on your K3S cluster:
+This is done through the Grafana API once the container is started and thus requires name resolving for your Grafana container https://tig-grafana.YourDomainOfChoice
+So this will require you to conduct the following steps on your K3S cluster prior to running the deployment script:
 - Determine your LoadBalancer IP: `kubectl get svc -A | grep LoadBalancer` 
 - Configure https://tig-grafana.YourDomainOfChoice with the LoadBalancer IP-Address
 - Verify 
