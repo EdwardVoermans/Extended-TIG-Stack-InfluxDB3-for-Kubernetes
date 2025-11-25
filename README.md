@@ -78,7 +78,7 @@ The final step in the deployment consists of creating a Grafana Service Account 
 This is done through the Grafana API once the container is started and thus requires name resolving for your Grafana container https://tig-grafana.YourDomainOfChoice
 So this will require you to conduct the following steps on your K3S cluster prior to running the deployment script:
 - Determine your LoadBalancer IP: `kubectl get svc -A | grep LoadBalancer` 
-- Configure DNS or host file: https://tig-grafana.YourDomainOfChoice with the LoadBalancer IP-Address
+- Configure DNS or host file: https://tig-grafana.tig-influx.test with the LoadBalancer IP-Address
 - Verify 
 If the DNS or host file isn't set prior to deployment the Token creation will fail. 
 
@@ -88,7 +88,7 @@ If the DNS or host file isn't set prior to deployment the Token creation will fa
 ```bash
 # Clone repository
 git clone https://github.com/EdwardVoermans/Extended-TIG-Stack-InfluxDB3-for-Kubernetes.git
-cd tig-stack-k3s
+cd Extended-TIG-Stack-InfluxDB3-for-Kubernetes
 ```
 
 ### Modify deployemnt / system variable
