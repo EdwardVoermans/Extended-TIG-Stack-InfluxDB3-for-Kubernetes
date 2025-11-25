@@ -178,6 +178,9 @@ tig-grafana    nginx   tig-grafana.tig-influx.test    192.168.30.32   80, 443   
 
 Credentials are in `.k3s-credentials` file and in kubernetes secrets.
 ```
+✓ InfluxDB3 Admin Token
+  Retrieve with: kubectl -n tig-stack-k3s-dev get secret tig-credentials -o jsonpath='{.data.influxdb-token}' | base64 -d
+
 ✓ Grafana Service Account Token created and saved
   Retrieve with: kubectl get secret -n tig-stack-k3s-dev grafana-sa-token -o jsonpath='{.data.token}' | base64 -d
 
