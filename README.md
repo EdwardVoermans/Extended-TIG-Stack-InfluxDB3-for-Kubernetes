@@ -3,7 +3,9 @@
 A complete Telegraf-InfluxDB3-Grafana (TIG) monitoring stack deployment for Kubernetes (K3S), featuring automated initialization, HTTPS ingress, and persistent storage for comprehensive system monitoring and visualization.
 The key of this project is the **automated deployment**. It will setup a kubernetes development environment in minutes instead of hours if not days.
 
-If you are looking for the **Docker version** check this: https://tinyurl.com/5n8ydsr4
+## Alternative versions:
+- Looking for the **Docker version**? Check: https://tinyurl.com/5n8ydsr4
+- Looking for the **single-node Kubernetes version**? Check: https://tinyurl.com/42z9f9n5
 
 ## Overview
 
@@ -75,7 +77,7 @@ This deployment requires a K3s cluster with the following components **already i
 
 ### Note on step 4.
 The final step in the deployment consists of creating a Grafana Service Account Token.
-This is done through the Grafana API once the container is started and thus requires name resolving for your Grafana container https://tig-grafana.YourDomainOfChoice
+This is done through the Grafana API once the container is started and thus requires name resolving for your Grafana container https://tig-grafana.tig-influx.test
 So this will require you to conduct the following steps on your K3S cluster prior to running the deployment script:
 - Determine your LoadBalancer IP: `kubectl get svc -A | grep LoadBalancer` 
 - Configure DNS or host file: https://tig-grafana.tig-influx.test with the LoadBalancer IP-Address
