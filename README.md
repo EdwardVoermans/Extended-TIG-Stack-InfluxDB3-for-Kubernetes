@@ -87,7 +87,7 @@ If the DNS or host file isn't set prior to deployment the Token creation will fa
 
 ```bash
 # Clone repository
-git clone <your-repo-url>
+git clone https://github.com/EdwardVoermans/Extended-TIG-Stack-InfluxDB3-for-Kubernetes.git
 cd tig-stack-k3s
 ```
 
